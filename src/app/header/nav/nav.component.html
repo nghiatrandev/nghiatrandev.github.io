@@ -1,0 +1,27 @@
+<div id="main-nav" class="container-flud" [ngClass]="isFixed ? 'example z-depth-1 fixed' : ''">
+    <div class="row">
+            <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-3 col-md-3">
+            <div class="logo-place">
+                <img class="img-config" src="assets/images/logo.jpg">
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-8" >
+            <div class="navigation nav-header">
+                <ul class="nav ">
+                    <li class="li-conf nav-item">
+                        <a class="nav-link active" >TRANG CHỦ</a>
+                    </li>
+                    <li class="li-conf nav-item" (click)="moveTo('about-me')">
+                        <a class="nav-link" >VỀ CHÚNG TÔI</a>
+                    </li>
+                    <li class="li-conf nav-item" (click)="moveTo('my-project')">
+                        <a class="nav-link disabled" >CÁC DỰ ÁN</a>
+                    </li>
+                    <li class="li-conf nav-item" (click)="moveTo('about-me')">
+                        <a class="nav-link disabled">LIÊN HỆ</a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</div>
