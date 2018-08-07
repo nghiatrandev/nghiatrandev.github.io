@@ -1,0 +1,32 @@
+<div id="main-nav" class="container-flud" [ngClass]="isFixed ? 'example z-depth-1 fixed' : ''">
+    <div class="row">
+            <div class="col-lg-1 col-md-1">&nbsp;</div>
+        <div class="col-lg-3 col-md-3">
+            <div class="logo-place">
+                <img class="img-config" src="assets/images/logo.jpg">
+            </div>
+        </div>
+        <div class="col-lg-1 col-md-1" >&nbsp;</div>
+        <div class="col-lg-7 col-md-7" >
+            <div class="navigation nav-header">
+                <ul class="nav ">
+                    <li class="li-conf nav-item">
+                        <a class="nav-link" [routerLink]="['/home']" [routerLinkActive]="['active-tab-navigation']" 
+                                                    [routerLinkActiveOptions]="{exact:false}">TRANG CHỦ</a>
+                    </li>
+                    <li class="li-conf nav-item">
+                        <a class="nav-link" [routerLink]="['/furniture']" [routerLinkActive]="['active-tab-navigation']" 
+                                                    [routerLinkActiveOptions]="{exact:false}">THIẾT KẾ THI CÔNG NỘI THẤT</a>
+                    </li>
+                    <li class="li-conf nav-item">
+                        <a class="nav-link" [routerLink]="['/architect']" [routerLinkActive]="['active-tab-navigation']" 
+                                                    [routerLinkActiveOptions]="{exact:false}">THIẾT KẾ KIẾN TRÚC</a>
+                    </li>
+                    <li class="li-conf nav-item"  [routerLink]="['/contact']" [routerLinkActive]="['active-tab-navigation']" 
+                                                    [routerLinkActiveOptions]="{exact:false}">
+                        <a class="nav-link">LIÊN HỆ</a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</div>

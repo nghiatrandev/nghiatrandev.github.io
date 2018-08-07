@@ -1,43 +1,38 @@
-.hello {
+/* .hello {
     font-weight: bold;
-    /* transform: translateX(100);
-    position: relative; */
-    /* top: 80px; */
     font-family: Arial;
     font-size: 48px;
     text-align: center;
 }
 .hello2 {
     font-weight: bold;
-    /* transform: translateX(100);
-    position: relative; */
-    /* top: 140px; */
     font-family: Arial;
     font-size: 50px;
     color: #FF8000;
     text-align: center;
-}
+} */
 
-.img-banner {
+/* .img-banner {
     background-image: url('/assets/images/city2.jpg');
     background-repeat: repeat-y;
     width: 100%;
-}
+} */
 
-.banner{
+/* .banner{
     position: relative;
     padding-left: 0;
     padding-right: 0;
+    width: 100%;
+    height: auto;
 }
 
 .animation-container{
     position: absolute;
-    /* background: greenyellow; */
     height: 25%;
     width: 100%;
     top: 25%;
     z-index: 1;
-}
+}  */
 
 /* .img-banner{
     width: 100%;
@@ -65,3 +60,40 @@
     font-size: 55px;
     transform: translate(315%);
 } */
+
+
+/* ===================================================================================================================== */
+
+.top-nav-collapse {
+    background-color: #78909c !important;
+}
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #78909c !important;
+    }
+}
+h1 {
+    letter-spacing: 8px;
+}
+h5 {
+    letter-spacing: 3px;
+}
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
+}
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 700px;
+    }
+}
+
+.my-config {
+    height: 1180px;
+}

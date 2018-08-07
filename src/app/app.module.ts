@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { BannerComponent } from './header/banner/banner.component';
-import { NavComponent } from './header/nav/nav.component';
+import { MyNavigationComponent } from './header/my-navigation/my-navigationv.component';
 import { AboutMeComponent } from './content/about-me/about-me.component';
 import { MyProjectComponent } from './content/my-project/my-project.component';
 import { FooterComponent } from './footer/footer/footer.component';
@@ -19,17 +19,24 @@ import {  MatDialogModule,
           MatDatepickerModule,
         } from '@angular/material';
 import { DisplayService } from 'src/app/services/display.service';
+import { UtilsService } from 'src/app/services/utils.service';
+import { AppRoutingModule, routingComponents } from './/app-routing.module';
+// import { FurnitureComponent } from 'src/app/content/furniture/furniture.component';
+// import { ArchitectureComponent } from 'src/app/content/architecture/architecture.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BannerComponent,
-    NavComponent,
+    MyNavigationComponent,
     AboutMeComponent,
     MyProjectComponent,
     FooterComponent,
     MyProjectDialogComponent,
     WhyChooseMeComponent,
+    routingComponents,
+    // FurnitureComponent,
+    // ArchitectureComponent,
   ],
   entryComponents: [
     MyProjectDialogComponent,
@@ -43,10 +50,12 @@ import { DisplayService } from 'src/app/services/display.service';
     MatInputModule,
     MatTabsModule,
     MatDatepickerModule,
+    AppRoutingModule,
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [
     DisplayService,
+    UtilsService,
   ],
   bootstrap: [AppComponent]
 })

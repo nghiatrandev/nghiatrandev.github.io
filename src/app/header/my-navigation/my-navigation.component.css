@@ -1,0 +1,54 @@
+:host {
+    background: #fff;
+}
+
+.navigation{
+    margin-left: auto;
+}
+
+.nav-header{
+    background: #fff;
+    /* padding-left: 22%; */
+}
+
+.logo-place {
+    padding-left: 12%;
+}
+
+.li-conf {
+    cursor: pointer;
+}
+
+.li-conf:hover {
+    background: #D8D8D8;
+}
+
+.li-conf a {
+    font-weight: bold;
+    color: #6c757d;
+    font-size: 19px;
+    padding: 22.6px 25px;
+}
+
+.li-conf a:hover {
+    color: #FE9A2E;
+}
+
+.img-config {
+    /* margin-left: 40px; */
+    /* float: left; */
+    width: 80px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    z-index: 2;
+}
+
+.active-tab-navigation {
+    background: #D8D8D8 !important;
+    color: #FE9A2E !important; 
+  } 

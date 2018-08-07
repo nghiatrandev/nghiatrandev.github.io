@@ -1,0 +1,21 @@
+.container {
+    padding-top: 120px;
+}
+
+img {
+    width: 100%;
+}
+
+.row div h1 {
+    color: #585858;
+}
+
+.row div p {
+    color: #585858;
+    font-size: 18px;
+}
+
+.title{
+    margin-top: 90px;
+    text-align: center;
+}

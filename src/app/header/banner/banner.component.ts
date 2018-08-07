@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, transition, style, animate} from '@angular/animations';
+import { UtilsService } from 'src/app/services/utils.service';
+import { SwiperModule } from 'angular2-useful-swiper';
 
 
 @Component({
@@ -8,25 +10,62 @@ import { trigger, state, transition, style, animate} from '@angular/animations';
   styleUrls: ['./banner.component.css'],
   animations: [
     trigger('flyInOut', [
-      state('out', style({width: '0%', left: '-20%'})),
-      state('in', style({width: '100%'})),
-      transition('out => in', animate(1200))
+      state('void', style({
+        transform: 'translateX(100%)'
+      })),
+      state('out', style({
+        transform: 'translateX(-100%)'
+      })),
+      state('in', style({        
+        transform: 'translateX(0%)'
+      })),
+      transition('void => in', animate('1500ms linear')),
+      transition('out => in', animate('1500ms linear')),
+      transition('in => out', animate('1500ms linear'))
     ]),
   ]
 })
 export class BannerComponent implements OnInit {
 
-  a:string = 'out';
+  // ordinal: number = 1;
 
-  helloTrigger: string = 'void';
+  // stt1: string = 'void';
+  // stt2: string = 'void';
+  // stt3: string = 'void';
 
-  constructor() { }
+  // config: any;
+  // swiper = new SwiperModule
+
+  constructor(
+    // private _utilsService: UtilsService,
+  ) { }
 
   ngOnInit() {
-    setTimeout (() => {
-      this.a = 'in';
-    },50);
+    // setTimeout(() => {
+    //   this.setOrdinal();
+    // },3000);
+    
+    //   this.stt1='in';
+
+  // Animations init
+  // new WOW().init();
   }
+  
+
+  // setOrdinal(){
+  //     if (this.ordinal < 3) {
+  //         this.ordinal += 1;
+
+  //     }
+  //     else {
+  //       this.ordinal = 1;
+
+  //     }
+  //     setTimeout(() => {
+  //       this.setOrdinal();
+  //     },3000);
+  // }
+
 
 
 }
