@@ -1,21 +1,7 @@
-.container {
-    padding-top: 120px;
+.h4 {
+    margin-bottom: 0px !important;
 }
 
-img {
-    width: 100%;
-}
-
-.row div h1 {
-    color: #585858;
-}
-
-.row div p {
-    color: #585858;
-    font-size: 18px;
-}
-
-.title{
-    margin-top: 90px;
-    text-align: center;
+p {
+    margin-bottom: 0px !important;
 }
