@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-// import { CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { AboutMeComponent } from 'src/app/content/about-me/about-me.component';
 import { FurnitureComponent } from 'src/app/content/furniture/furniture.component';
 import { ArchitectureComponent } from 'src/app/content/architecture/architecture.component';
@@ -10,12 +10,12 @@ import { MyProjectComponent } from 'src/app/content/my-project/my-project.compon
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'trangchu', pathMatch: 'full' },
-  { path: 'trangchu', component: AboutMeComponent },
-  { path: 'noithat', component: FurnitureComponent },
-  { path: 'thietke', component: ArchitectureComponent },
-  { path: 'linhvuckhac', component: OtherAreasComponent },
-  { path: 'duan', component: MyProjectComponent },
+  { path: '', redirectTo: 'trang-chu', pathMatch: 'full' },
+  { path: 'trang-chu', component: AboutMeComponent },
+  { path: 'noi-that', component: FurnitureComponent },
+  { path: 'thiet-ke', component: ArchitectureComponent },
+  { path: 'linh-vuc-khac', component: OtherAreasComponent },
+  { path: 'du-an', component: MyProjectComponent },
 ]
 
 @NgModule({
