@@ -61,3 +61,24 @@ h4 {
     width: 100%;
 }
 
+.slide-show-img {
+    height: 480px;
+}
+
+.below-slide-show-img {
+    height: 130px;
+}
+
+.carousel-control-icon-div {
+    width: 40px;
+    height: 40px;
+    background: #000;
+}
+
+.carousel-control-icon-div i {
+    font-size: 38px !important;
+}
+
+.carousel-control-a:hover .carousel-control-icon-div{
+    opacity: 0.7;
+}
